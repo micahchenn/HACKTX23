@@ -1,23 +1,20 @@
 {
-    "manifest_version": 1,
-    "name": "Reading Time",
+    "manifest_version": 2,
+    "name": "MS Squad",
     "description": "Add the reading time to Chrome Extension documentation articles",
     "version": "1.0",
     "icons": {
-      "16": "",
-      "32": "",
-      "48": "",
-      "128": ""
+      "48": "/images/image48.png"
+    },
+    "page_action": {
+      "default_icon": {
+        "48": "/images/image48.png"
+      }
     },
     "content_scripts": [
       {
-        "js": [
-          "scripts/content.js"
-        ],
-        "matches": [
-          "https://developer.chrome.com/docs/extensions/*",
-          "https://developer.chrome.com/docs/webstore/*"
-        ]
+        "matches": ["http://www.googlecom/*"],
+        "css": ["manifestmain.css"]
       }
     ]
   }
